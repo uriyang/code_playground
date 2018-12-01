@@ -5,6 +5,7 @@ Todos:
     [] kotlin real world
 
 1_class-kotlin:
+    - 코틀린 인 액션
     [] ch01 실습 추가
     [] ch02 실습 추가
     [] ch03 실습 추가
@@ -15,3 +16,8 @@ Todos:
     [] ch09 실습 추가
     [] ch10 실습 추가
     [] ch11 실습 추가
+
+2_lecture-vue:
+    - 인프런 > 실습 UI 개발로 배워보는 순수 Javascript와 VueJS 개발
+    [x] 순수 Javascript
+    [] vue JS
