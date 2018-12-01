@@ -3,6 +3,7 @@ Todos:
     [] 인텔리제이 구매
     [] 인프런 자바
     [] kotlin real world
+    [] 노드 교과서
 
 1_class-kotlin:
     - 코틀린 인 액션
@@ -21,3 +22,7 @@ Todos:
     - 인프런 > 실습 UI 개발로 배워보는 순수 Javascript와 VueJS 개발
     [x] 순수 Javascript
     [] vue JS
+
+3_node_book_review:
+    - node교과서-리뷰실습
+    [x] 책으로 다시 하기
