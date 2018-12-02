@@ -26,3 +26,6 @@ Todos:
 3_node_book_review:
     - node교과서-리뷰실습
     [x] 책으로 다시 하기
+
+4_nomad_UTube:
+    - UTube clone coding
