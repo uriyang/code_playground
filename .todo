@@ -6,6 +6,12 @@ Todos:
     [] 노드 교과서
     [] hasket 공부하기
     [] lisp 공부하기
+    [] 노마드 - ReactJS로 웹 서비스 만들기
+    [] 노마드 - styled-component 강의
+    [] 노마드 - type script
+    [] 노마드(인프런) - 리액트 16 마스터 하기
+    [] 노마드 - GraphQL API
+    [] 노마드 - GraphQL client
 
 1_class-kotlin:
     - 코틀린 인 액션
@@ -31,3 +37,6 @@ Todos:
 
 4_nomad_UTube:
     - UTube clone coding
+
+5_nomad_Uber:
+    - Uber clone coding
