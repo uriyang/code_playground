@@ -1,42 +1,55 @@
 Todos:
-    [] 프로젝트 리스트 업데이트
-    [] 인텔리제이 구매
-    [] 인프런 자바
-    [] kotlin real world
-    [] 노드 교과서
-    [] hasket 공부하기
-    [] lisp 공부하기
-    [] 노마드 - ReactJS로 웹 서비스 만들기
-    [] 노마드 - styled-component 강의
-    [] 노마드 - type script
-    [] 노마드(인프런) - 리액트 16 마스터 하기
-    [] 노마드 - GraphQL API
-    [] 노마드 - GraphQL client
+    ☐ 프로젝트 리스트 업데이트
+    ☐ 인텔리제이 구매
+    ☐ 인프런 자바
+    ☐ kotlin real world
+    ☐ 노드 교과서
+    ☐ hasket 공부하기
+    ☐ lisp 공부하기
+    ☐ 노마드 - ReactJS로 웹 서비스 만들기
+    ☐ 노마드 - styled-component 강의
+    ☐ 노마드 - type script
+    ☐ 노마드(인프런) - 리액트 16 마스터 하기
+    ☐ 노마드 - GraphQL API
+    ☐ 노마드 - GraphQL client
 
 1_class-kotlin:
     - 코틀린 인 액션
-    [] ch01 실습 추가
-    [] ch02 실습 추가
-    [] ch03 실습 추가
-    [] ch04 실습 추가
-    [] ch06 실습 추가
-    [] ch07 실습 추가
-    [] ch08 실습 추가
-    [] ch09 실습 추가
-    [] ch10 실습 추가
-    [] ch11 실습 추가
+    ☐ ch01 실습 추가
+    ☐ ch02 실습 추가
+    ☐ ch03 실습 추가
+    ☐ ch04 실습 추가
+    ☐ ch06 실습 추가
+    ☐ ch07 실습 추가
+    ☐ ch08 실습 추가
+    ☐ ch09 실습 추가
+    ☐ ch10 실습 추가
+    ☐ ch11 실습 추가
 
 2_lecture-vue:
     - 인프런 > 실습 UI 개발로 배워보는 순수 Javascript와 VueJS 개발
-    [x] 순수 Javascript
-    [] vue JS
+    ✔ 순수 Javascript @done(18-12-02 21:12)
+    ☐ vue JS
 
 3_node_book_review:
     - node교과서-리뷰실습
-    [x] 책으로 다시 하기
+    ✔ 책으로 다시 하기 @done(18-12-02 21:12)
 
 4_nomad_UTube:
     - UTube clone coding
 
 5_nomad_Uber:
     - Uber clone coding
+
+6_react_skill:
+    - 리액트를 다루는 기술
+    ☐ ch13 실습 추가
+    ☐ ch14 실습 추가
+    ☐ ch15 실습 추가
+    ☐ ch16 실습 추가
+    ☐ ch17 실습 추가
+    ☐ ch18 실습 추가
+    ☐ ch19 실습 추가
+    ☐ ch20 실습 추가
+    ☐ ch21 실습 추가
+    ☐ ch22 실습 추가
