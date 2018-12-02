@@ -4,3 +4,6 @@
 ## 2_lecture-vue: "인프런 > 실습 UI 개발로 배워보는 순수 Javascript와 VueJS 개발"
   - [링크](https://www.inflearn.com/course/%EC%88%9C%EC%88%98js-vuejs-%EA%B0%9C%EB%B0%9C-%EA%B0%95%EC%A2%8C/)
 ## 3_node_book_review: "노드 교과서" 리뷰 실습
+## 4_nomad_UTube: 노마드 아카데미 "Utube 클론 코딩"
+## 5_nomad_Uber: 노마드 아카데이 "Uber 클론 코딩"
+## 6_react_skill: "리액트를 다루는 기술" 실습
