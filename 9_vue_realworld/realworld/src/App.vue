@@ -1,12 +1,21 @@
 <template>
   <div id="app">
+    <R-Header />
     <router-view></router-view>
+    <R-Footer />
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'R-Header': Header,
+    'R-Footer': Footer
+  }
 }
 </script>
 
