@@ -84,7 +84,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'R-Header',
+  name: 'Header',
   computed: {
     ...mapGetters(["currentUser", "isAuthenticated"])
   }

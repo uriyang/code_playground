@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'R-Footer'
+  name: 'Footer'
 }
 </script>

@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <R-Header />
+    <Header />
     <router-view></router-view>
-    <R-Footer />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/layout/Header';
+import Footer from '@/layout/Footer';
 
 export default {
   name: 'app',
   components: {
-    'R-Header': Header,
-    'R-Footer': Footer
+    Header,
+    Footer
   }
 }
 </script>
