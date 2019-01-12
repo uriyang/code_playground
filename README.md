@@ -12,3 +12,4 @@
   - [링크](https://programmers.co.kr/learn/courses/7637)
 ## 9_vue_realworld: "vue-realworld" 클론 코딩
   - [링크](https://github.com/gothinkster/vue-realworld-example-app)
+## 10_kubernetes: Kubernetes in the Google Cloud 실습
