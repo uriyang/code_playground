@@ -71,6 +71,19 @@ Todos:
     ☐ 비동기: 동시성 프로그래밍2
     ☐ 비동기: 동시성 프로그래밍3
 
-9_vue_realworld
+9_vue_realworld:
     - 뷰 리얼월드
-    
+
+10_kubernetes:
+    - Kubernetes in the Google Cloud
+    ✔ Introduction to Docker 실습 @done(19-01-12)
+    ☐ Hello Node Kubernetes
+    ☐ Orchestrating the Cloud with Kubernetes
+    ☐ Managing Deployments Using Kubernetes Engine
+    ☐ Continuous Delivery with Jenkins in Kubernetes Engine
+    ☐ Running a MongoDB Database in Kubernetes with StatefulSets
+    ☐ Build a Slack Bot with Node.js on Kubernetes
+    ☐ Setting up a Private Kubernetes Cluster
+    ☐ Helm Package Manager
+    ☐ NGINX Ingress Controller on Google Kubernetes Engine
+    ☐ 마크다운 정리
