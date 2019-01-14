@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router';
 import store from './store';
 
+// import CSS
+import './assets/style/global.scss';
+
 // TODO: 요기도 아직 붙혀야 할 기능들 있음
 
 Vue.config.productionTip = false
