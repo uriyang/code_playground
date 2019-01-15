@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+// TODO: module 폴더 만들기
 import home from './home.module';
 import auth from './auth.module';
 import article from './article.module';
