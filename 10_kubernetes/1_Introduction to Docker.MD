@@ -4,10 +4,10 @@
 
 ## 설치 및 요구사항 
 1. Google Console 열기
-1. Google Cloud Shell 활성화![shell](https://gcpstaging-qwiklab-website-prod.s3.amazonaws.com/bundles/assets/bdd6397bf6a7f59197c396bf64c6f56a0a578511a8cec39a747511711f2d8404.png)
-1. START CLUDUD SHELL: GCP 명령 줄 도구
+2. Google Cloud Shell 활성화![shell](https://gcpstaging-qwiklab-website-prod.s3.amazonaws.com/bundles/assets/bdd6397bf6a7f59197c396bf64c6f56a0a578511a8cec39a747511711f2d8404.png)
+3. START CLUDUD SHELL: GCP 명령 줄 도구
 ![cloud shell](https://gcpstaging-qwiklab-website-prod.s3.amazonaws.com/bundles/assets/2b3aa073e2de48f786ec9497068b23b4bb0479e055c72b245c68c629a3eb6bb5.png)
-1. gcloud auth list: 활성 계정 이름 리스트
+4. gcloud auth list: 활성 계정 이름 리스트
 ```
 gcloud auth list
 ```
@@ -21,7 +21,7 @@ Credentialed accounts:
  Credentialed accounts:
  - google1623327_student@qwiklabs.net
  ```
- 1. gcloud config list project: 프로젝트 ID 리스트
+5. gcloud config list project: 프로젝트 ID 리스트
  ```
  gcloud config list project
  ```
@@ -54,7 +54,7 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ...
 ```
-1. 컨테이너 이미지 보기
+2. 컨테이너 이미지 보기
 ```
 docker images
 ```
@@ -65,7 +65,7 @@ hello-world    latest   1815c82652c0   6 days ago    1.84 kB
 ```
 > 이미지는 SHA256 해시 형식
 [SHA256](https://www.movable-type.co.uk/scripts/sha256.html)
-1. 다시 hello-world 실행
+3. 다시 hello-world 실행
 ```
 docker run hello-world
 ```
@@ -78,16 +78,17 @@ To generate this message, Docker took the following steps:
 ...
 ```
 
-1. 실행중인 컨테이너
+4. 실행중인 컨테이너
 ```
 docker ps
 ```
 - 명력 출력
+```
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 > 실행중인 컨테이너가 없습니다. 이전에 실행 한 hello-world 컨테이너가 이미 종료되었습니다.
 
-1. 실행을 완료 한 컨테이너 포함 조회
+5. 실행을 완료 한 컨테이너 포함 조회
 ```
 docker ps -a
 ```
@@ -97,9 +98,10 @@ CONTAINER ID      IMAGE           COMMAND      ...     NAMES
 6027ecba1c39      hello-world     "/hello"     ...     elated_knuth
 358d709b8341      hello-world     "/hello"     ...     epic_lewin
 ```
-> Names는 무작위로 생성되지만 지저할 수 있다.
-  ```docker run --name [container-name] hello-world
-
+> Names는 무작위로 생성되지만 지정할 수 있다.
+```
+docker run --name [container-name] hello-world
+```
 
 ## build
 1. Docker 이미지 작성
@@ -132,7 +134,7 @@ EOF
 > 그런 다음 컨테이너 포트를 공개하여 해당 포트에서 연결을 허용하고 마지막으로 node 명령을 실행하여 응용 프로그램을 시작합니다.
 [Docker 명령 참조](https://docs.docker.com/engine/reference/builder/#known-issues-run)
 
-1. 노드 응용 프로그램 생성
+2. 노드 응용 프로그램 생성
 ```
 cat > app.js <<EOF
 const http = require('http');
@@ -157,7 +159,7 @@ process.on('SIGINT', function() {
 EOF
 ```
 
-1. Dockerfile이 있는 디렉토리에서 명령 실행
+3. Dockerfile이 있는 디렉토리에서 명령 실행
 ```
 docker build -t node-app:0.1 .
 ```
@@ -179,7 +181,7 @@ Successfully built f166cd2a9f10
 > 이미지 이름: node-app
 > 태그: 0.1
 
-1. build한 이미지 보기
+4. build한 이미지 보기
 ```
 docker images
 ```
@@ -204,7 +206,7 @@ Server running at http://0.0.0.0:80/
 > 컨테이너 포트 80, 호스트 포트 4000에 매핑
 > http://locahlost:4000
 
-1. 다른 터미널을 열고 (Cloud Shell에서 +아이콘을 클릭) 서버 테스트
+2. 다른 터미널을 열고 (Cloud Shell에서 +아이콘을 클릭) 서버 테스트
 ```
 curl http://localhost:4000
 ```
@@ -214,12 +216,12 @@ Hello World
 ```
 > 백그라운드에서 실행되도록하려면 (터미널 세션에 연결되지 않음) -d플래그 지정
 
-1. 초기 터미널 닫은 후 컨테이너 중지 및 제거
+3. 초기 터미널 닫은 후 컨테이너 중지 및 제거
 ```
 docker stop my-app && docker rm my-app
 ```
 
-2. 백그라운드에서 컨테이너 시작
+4. 백그라운드에서 컨테이너 시작
 ```
 docker run -p 4000:80 --name my-app -d node-app:0.1
 
@@ -231,7 +233,7 @@ CONTAINER ID   IMAGE          COMMAND        CREATED         ...  NAMES
 xxxxxxxxxxxx   node-app:0.1   "node app.js"  16 seconds ago  ...  my-app
 ```
 
-3. 도커 로그 보기
+5. 도커 로그 보기
 ```
 docker logs [container_id]
 ```
@@ -240,12 +242,12 @@ docker logs [container_id]
 Server running at http://0.0.0.0:80/
 ```
 
-4. 이전에 생성한 디렉토리 열기
+6. 이전에 생성한 디렉토리 열기
 ```
 cd test
 ```
 
-5. 다른 문자열로 "안녕하세요"를 대체
+7. 다른 문자열로 "안녕하세요"를 대체
 ```
 ....
 const server = http.createServer((req, res) => {
@@ -256,12 +258,12 @@ const server = http.createServer((req, res) => {
 ....
 ```
 
-6. 이미지 작성 및 태그 지정 (0.2)
+8. 이미지 작성 및 태그 지정 (0.2)
 ```
 docker build -t node-app:0.2 .
 ```
 
-7. 컨테이너 테스트
+9. 컨테이너 테스트
 ```
 curl http://localhost:8080
 curl http://localhost:4000
