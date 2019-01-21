@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import home from './home.module';
-import auth from './auth.module';
-import article from './article.module';
-import profile from './profile.module';
+import home from './modules/home.module';
+import auth from './modules/auth.module';
+import article from './modules/article.module';
+import profile from './modules/profile.module';
 
 Vue.use(Vuex);
 
