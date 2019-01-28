@@ -2,8 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-// import { HomePage, SamplePage, NotFoundPage } from './components'
-import { HomePage } from '.'
+import { HomePage, SamplePage, NotFoundPage } from '.'
 
 import theme from './themes/default'
 
@@ -18,8 +17,8 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/" component={HomePage} exact />
-        {/* <Route path="/sample-page" component={SamplePage} />
-        <Route component={NotFoundPage} /> */}
+        <Route path="/sample-page" component={SamplePage} />
+        <Route component={NotFoundPage} />
       </Switch>
     </ThemeProvider>
   )
