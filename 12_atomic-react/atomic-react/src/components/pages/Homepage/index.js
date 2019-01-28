@@ -1,10 +1,18 @@
 import React from 'react'
 
+import {
+  PageTemplate, Header, Hero, Footer, FeatureList,
+} from '../..'
+
 const HomePage = () => {
   return (
-    <div>
-      HomePage
-    </div>
+    <PageTemplate
+      header={<Header />}
+      hero={<Hero />}
+      footer={<Footer />}
+    >
+      <FeatureList />
+    </PageTemplate>
   )
 }
 
