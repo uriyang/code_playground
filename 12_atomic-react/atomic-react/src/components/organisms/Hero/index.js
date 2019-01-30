@@ -5,11 +5,11 @@ import { palette, size } from 'styled-theme'
 import {
   Block,
   Paragraph,
-  IconLink,
+  // IconLink,
   IconButton,
   LogoImage,
-  PreformattedText,
-  Heading,
+  // PreformattedText,
+  // Heading,
   Tooltip,
 } from '../..'
 
@@ -79,32 +79,32 @@ const Instructions = styled.div`
 
 const Hero = (props) => {
   return (
-    <Wrapper obaque reverse {...props}>
+    <Wrapper opaque reverse {...props}>
       <InnerWrapper>
         <Section>
           <LogoImage height={265} />
           <ButtonGroup>
-            <Tooltip reverse data-title="Just a fancy tootilp">
-              <IconButton icon="github" href="https://github.com/uriyang">GitHub</IconButton>
+            <Tooltip reverse data-title="Just a fancy tooltip 😄">
+              {/* <IconButton icon="github" href="https://github.com/diegohaz/arc">GitHub</IconButton> */}
             </Tooltip>
-            <Tooltip reverse data-title="Another tooltip aligned differently" align="end" position="bottom">
-              <IconButton icon="docs" href="https://github.com/uriyang">Docs</IconButton>
-            </Tooltip>
+            {/* <Tooltip reverse data-title="Another tooltip aligned differently" align="end" position="bottom">
+              <IconButton icon="docs" href="https://github.com/diegohaz/arc/wiki">Docs</IconButton>
+            </Tooltip> */}
           </ButtonGroup>
         </Section>
-        <Section>
+        {/* <Section>
           <Text>
             <strong>ARc</strong>
             {' '}
-            is a
-            <IconLink reverse icon="react" href="https://github.com/uriyang">React</IconLink>
-            starter kt based on the
+is a
+            <IconLink reverse icon="react" href="https://facebook.github.io/react/">React</IconLink>
             {' '}
-            <IconLink reverse icon="atomic-design" href="https://github.com/uriyang">Atomic Design</IconLink>
+starter kit based on the
+            <IconLink reverse icon="atomic-design" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</IconLink>
             {' '}
-            methodology. It&pos;s
+methodology. It&apos;s
             <strong>progressive</strong>
-            , which means that you can start with the basic boilerplate and try the other features when you are compotable.
+, which means that you can start with the basic boilerplate and try the other features when you are comfortable.
           </Text>
           <Instructions>
             <Heading level={2} reverse>Install</Heading>
@@ -115,12 +115,12 @@ const Hero = (props) => {
               icon="docs"
               right
               reverse
-              href="https://github.com/uriyang"
+              href="https://github.com/diegohaz/arc/wiki/Setup"
             >
               Learn more
             </IconLink>
           </Instructions>
-        </Section>
+        </Section> */}
       </InnerWrapper>
     </Wrapper>
   )

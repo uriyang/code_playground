@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { size } from 'styled-theme'
+import { size } from 'styled-theme'
 
-import { Block } from '../..'
+import { IconLink, PrimaryNavigation, Block } from '../..'
 
 const Wrapper = styled(Block)`
   display: flex;
@@ -12,11 +12,23 @@ const Wrapper = styled(Block)`
     padding: 0.5rem;
   }
 `
+const InnerWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: ${size('maxWidth')};
+  > :not(:first-child) {
+    margin-left: 1rem;
+  }
+`
 
 const Header = (props) => {
   return (
     <Wrapper opaque reverse {...props}>
-      Header
+      <InnerWrapper>
+        <IconLink to="/" icon="arc" height={100} />
+        <PrimaryNavigation reverse />
+      </InnerWrapper>
     </Wrapper>
   )
 }

@@ -21,4 +21,8 @@ PreformattedText.propTypes = {
   wrapped: PropTypes.bool,
 }
 
+PreformattedText.defaultProps = {
+  palette: 'grayscale',
+}
+
 export default PreformattedText
