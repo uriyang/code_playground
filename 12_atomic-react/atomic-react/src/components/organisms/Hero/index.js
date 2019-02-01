@@ -5,11 +5,11 @@ import { palette, size } from 'styled-theme'
 import {
   Block,
   Paragraph,
-  // IconLink,
+  IconLink,
   IconButton,
   LogoImage,
-  // PreformattedText,
-  // Heading,
+  PreformattedText,
+  Heading,
   Tooltip,
 } from '../..'
 
@@ -85,14 +85,14 @@ const Hero = (props) => {
           <LogoImage height={265} />
           <ButtonGroup>
             <Tooltip reverse data-title="Just a fancy tooltip 😄">
-              {/* <IconButton icon="github" href="https://github.com/diegohaz/arc">GitHub</IconButton> */}
+              <IconButton icon="github" href="https://github.com/diegohaz/arc">GitHub</IconButton>
             </Tooltip>
-            {/* <Tooltip reverse data-title="Another tooltip aligned differently" align="end" position="bottom">
+            <Tooltip reverse data-title="Another tooltip aligned differently" align="end" position="bottom">
               <IconButton icon="docs" href="https://github.com/diegohaz/arc/wiki">Docs</IconButton>
-            </Tooltip> */}
+            </Tooltip>
           </ButtonGroup>
         </Section>
-        {/* <Section>
+        <Section>
           <Text>
             <strong>ARc</strong>
             {' '}
@@ -120,7 +120,7 @@ methodology. It&apos;s
               Learn more
             </IconLink>
           </Instructions>
-        </Section> */}
+        </Section>
       </InnerWrapper>
     </Wrapper>
   )
